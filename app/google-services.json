@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "903532479710",
+    "firebase_url": "https://mobile-programming-20-2.firebaseio.com",
+    "project_id": "mobile-programming-20-2",
+    "storage_bucket": "mobile-programming-20-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903532479710:android:fc730ad6d2fc7f545f2e4f",
+        "android_client_info": {
+          "package_name": "com.example.study"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903532479710-7nchv35hkp2ur1g78k5k2pfkethtp1ec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.study",
+            "certificate_hash": "f18d3710c57c536e0daaec5e4ff0f6d8ba2f186d"
+          }
+        },
+        {
+          "client_id": "903532479710-basbg9n4sdj69cl2f4thln7dm4lj2o36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCElw95VlKVZOsVP-tcljE8AIKuW_OLMGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903532479710-basbg9n4sdj69cl2f4thln7dm4lj2o36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

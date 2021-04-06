@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/frag_mypage"
+        android:name="com.example.study.Frag_MyPage"
+        android:label="Profile"
+        tools:layout="@layout/frag4_mypage" />
+
+    <fragment
+        android:id="@+id/frag_mystudy"
+        android:name="com.example.study.Frag_Community"
+        android:label="My Study Group"
+        tools:layout="@layout/frag2_community_fab" />
+
+    <fragment
+        android:id="@+id/frag_test"
+        android:name="com.example.study.Frag_Notification"
+        android:label="test"
+        tools:layout="@layout/frag3_notification" />
+
+</navigation>

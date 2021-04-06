@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navi_mystudy_notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="공지사항" />
+    <item
+        android:id="@+id/navi_mystudy_chat"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="채팅" />
+    <item
+        android:id="@+id/navi_mystudy_studyroom"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="스터디룸"  />
+    <item
+        android:id="@+id/navi_mystudy_zoom"
+        android:icon="@drawable/ic_baseline_duo_24"
+        android:title="화상 회의"  />
+</menu>

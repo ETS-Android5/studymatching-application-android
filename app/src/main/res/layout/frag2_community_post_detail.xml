@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/PostDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:id="@+id/toolbarPostTitle"
+        android:text=""
+        android:textStyle="bold"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+    </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <include
+        android:id="@+id/postAuthorLayout"
+        layout="@layout/frag2_include_post_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PostDetailToolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"/>
+
+
+    <include
+        android:id="@+id/postTextLayout"
+        layout="@layout/frag2_include_post_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/postAuthorLayout"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/commentForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/postTextLayout"
+        android:layout_marginTop="20dp"
+        android:weightSum="1.0"
+        android:layout_marginHorizontal="16dp">
+
+        <EditText
+            android:id="@+id/fieldCommentText"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Write a comment..."/>
+
+                <Button
+                    android:id="@+id/buttonPostComment"
+                    android:background="@drawable/button"
+                    android:textColor="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:text="Post"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPostComments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commentForm"
+        tools:listitem="@layout/item_comment"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

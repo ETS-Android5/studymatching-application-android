@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/mypage"
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:title="회원정보" />
+    <item
+        android:id="@+id/mystudy"
+        android:icon="@drawable/ic_baseline_school_24"
+        android:title="내 스터디" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_remove_circle_outline_24"
+        android:title="로그아웃"  />
+    </group>
+</menu>
